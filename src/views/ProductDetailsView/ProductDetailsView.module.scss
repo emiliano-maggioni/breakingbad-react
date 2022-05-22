@@ -1,0 +1,30 @@
+@import "Utility.scss";
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    min-height:100vh;     
+    padding: 0px;
+}
+
+.container > section{
+    width:100%;
+}
+
+.container > section:first-child{
+    min-height:100vh;
+}
+
+
+@media screen and (min-width: 768px) {
+    .container{
+        height: 100vh;        
+        flex-direction: row;
+    }  
+    
+.container > section{
+    width:50%;
+}
+}
