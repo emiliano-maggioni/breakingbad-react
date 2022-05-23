@@ -8,8 +8,11 @@ const Header = () => {
   return (
     <header className={classes.container} >
       <div className={classes.topBar}>
-        <figure className={classes.imgContainer} onClick={() => navigate("/")}  ><img src="/logo192.png" /> </figure>
-        <span onClick={() => navigate("/")} >ReactJS Store</span>
+        <figure className={classes.imgContainer} onClick={() => navigate("/")}  ><img src="/logo.png" /> </figure>
+        <h1 onClick={() => navigate("/")} >Breaking Bad React</h1>
+      </div>
+      <div className={classes.bottomBar}>
+        LANGUAGE: <span onClick={() => navigate("/")} >EN</span>
       </div>
     </header>
   );
