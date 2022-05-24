@@ -1,0 +1,71 @@
+@import "Utility.scss";
+
+.container {
+    display: flex;
+    min-height: 15rem;
+    flex-direction: column;
+    border: 1px solid $yellow;
+    overflow: hidden;
+    padding: 0px;
+    position: relative;
+    opacity: 0.88;
+}
+
+.container:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.container>img {
+    max-width: 100%;
+    align-self: center;    
+    min-height: 10rem;
+}
+
+.container>figcaption {
+    padding: 0.65rem;
+    box-sizing: border-box;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 0px;
+    color: $yellow;
+    background: rgba(3, 3, 3, 0.9);
+    min-height: 5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nickname {
+    font-size: 1.27rem;
+    line-height: 1.27rem;
+    text-align: center;
+}
+
+.container>figcaption span {
+    font-size: 0.95rem;
+}
+
+
+@media screen and (min-width: 768px) {
+
+    .container>img {
+        min-height: 90%;
+        min-width:100%
+    }
+
+}
+
+@media screen and (min-width: 992px) {
+    .container {
+        height: 22rem;
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+    .container {
+        height: 25rem;
+    }
+}

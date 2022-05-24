@@ -1,0 +1,29 @@
+@import "Utility.scss";
+
+.container{
+    display: flex;
+    flex-direction: column;
+    background:$yellow;
+    overflow:hidden;    
+    color:$black;
+}
+
+.container > p  {
+    padding: 1rem;
+    margin: 0px;
+}
+.container > p:nth-child(even) {background: $yellowDarker}
+
+
+.quote{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.quote > button{
+    margin-top: 3rem;
+    margin-left: auto;
+}
+

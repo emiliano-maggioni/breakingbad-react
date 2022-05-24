@@ -1,16 +1,15 @@
-import React, { useRef, useEffect, useState } from 'react';
 import { Route, Routes } from 'react-router-dom'
-import HomeView from "views/HomeView/HomeView";
-import AddProductView from "views/AddProductView/AddProductView"; 
+import CharactersView from "views/CharactersView/CharactersView";
+import CharacterDetailsView from "views/CharacterDetailsView/CharacterDetailsView";
 
-const Routing = () => {
+const Routing = () => { 
 
   return (
       <Routes>
-        <Route path='/addproduct/' element={<AddProductView />} />  
-        <Route path='/' element={<HomeView />} />      
+        <Route path='/details/:id' element={<CharacterDetailsView />} />  
+        <Route path='/' element={<CharactersView />} />      
       </Routes>
-  ); 
+  );
 }
 
 export default Routing;

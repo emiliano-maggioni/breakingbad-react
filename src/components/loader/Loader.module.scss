@@ -1,0 +1,20 @@
+@import "Utility.scss";
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0rem;
+  }
+ span.spinnerBase{
+    color:$yellowDarker;
+    margin:0 auto;
+  }
+
+  
+@media screen and (min-width: 992px) {
+    .container{
+        padding: 5rem 0rem;
+      }
+}
