@@ -10,5 +10,11 @@ export type characterInfo =  {
   portrayed: string; 
   category:  any[];
 }
+export type quoteInfo =  {
+  quote_id: any;
+  quote: string;
+  author: string;  
+  series: string;
+}
 
 

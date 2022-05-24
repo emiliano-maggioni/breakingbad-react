@@ -1,13 +1,15 @@
-import React, {useContext, useState, useEffect} from 'react'
+import React, { useState, useEffect} from 'react'
 import ItemsContainer from 'components/itemsContainer/ItemsContainer';
 import TitleBar from 'components/titleBar/TitleBar';
 import classes from "./CharactersView.module.scss";
-import { Context } from "contexts/Context"; 
 import { getAPI } from 'utility/callsAPI';
+import Loader from 'components/loader/Loader';
+import { characterInfo } from 'utility/Types';
+import { useTranslation } from 'react-i18next';
 
 const CharactersView = () => {
-  const defcontext = useContext(Context); 
-  const [list, setList] = useState([]);
+  const { t, i18n } = useTranslation();
+  const [list, setList] = useState<characterInfo[]>([]);
     
   const getCharactersList = async () => {
       const data = await getAPI("/api/characters"); 
@@ -18,12 +20,11 @@ const CharactersView = () => {
     getCharactersList();    
   },[]); 
   
-  console.log("list:",list);
-  
   return (
     <section className={classes.container} >
-          <TitleBar title="Characters List Page" />
-          {(list?.length) && <ItemsContainer list={(defcontext.searchString) ? list.filter((el:any) => (el.nickname.toLowerCase() == defcontext.searchString) ||  (el.name.toLowerCase() == defcontext.searchString) ) : list } /> }
+      
+          <TitleBar title={t('Characters List Page')} />         
+          {(list.length > 0) ? <ItemsContainer list={ list } /> :  <Loader />}
      </section>
   );
 }

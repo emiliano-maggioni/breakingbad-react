@@ -1,4 +1,3 @@
-import React  from 'react'
 import Item from 'components/item/Item';
 import classes from "./ItemsContainer.module.scss";
 import { useNavigate } from 'react-router-dom';

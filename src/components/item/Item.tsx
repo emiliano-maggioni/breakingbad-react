@@ -5,7 +5,7 @@ const Item = (props:any) => {
   return (
       <figure className={classes.container} onClick={props.onClick} >
         <img src={props.image} />
-        <figcaption><strong>{props.nickname} {props.name}</strong></figcaption> 
+        <figcaption><strong className={classes.nickname} >{props.nickname}</strong><span> {props.name}</span> </figcaption> 
       </figure>
   );
 }
