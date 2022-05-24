@@ -1,5 +1,5 @@
 # breakingbad-react
-A ReactJS exercise about Breaking Bad done with ReactJS, Typescript, Material UI, SASS and API Rest.<br />It's Mobile first, and uses Breaking Bad api.
+A ReactJS exercise about Breaking Bad done with ReactJS, Typescript, Material UI, SASS and API Rest.<br />It's Responsive (Mobile first), and uses Breaking Bad api.
 
 ## Project explanation
 This project contains:<br />
@@ -12,7 +12,7 @@ This project contains:<br />
 <br />
 I've used css modules because i find that allows you to write traditional code (without limitation, because every class has a unique name) combined with SASS features, (you can view the Utility.scss file that i import in all css files) like variables, mixins, extends and so on. <br />
 <br />
-I don't have used a state management system this time because the app is very small and i haven't seen features that requires it (for example a user login session), i've used Typescript because it allow me to organize and check better what kind of type my props or data need to have and again it helps me to avoid more errors.<br /><br />
+I don't have used a state management system this time because the app is very small and i haven't seen features that requires it (for example a user login session), i've used Typescript because it allows me to organize and check better what kind of type my props or data need to have and again it helps me to avoid more errors.<br /><br />
 
 You can view the app in 2 different languages (Espanol and English).<br />
 
